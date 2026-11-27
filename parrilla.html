@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radio Cuqui FM · Parrilla</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="index.html">Radio Cuqui FM</a>
+    <nav aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="parrilla.html" aria-current="page">Parrilla</a>
+      <a href="invitados.html">Invitados</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="page-head">
+    <h1>Parrilla de programación</h1>
+    <p>Elige el día y mira qué suena en cada franja horaria.</p>
+  </div>
+
+  <input class="dia" type="radio" name="dia" id="d-lv" checked aria-label="Lunes a viernes">
+  <input class="dia" type="radio" name="dia" id="d-sa" aria-label="Sábado">
+  <input class="dia" type="radio" name="dia" id="d-do" aria-label="Domingo">
+
+  <div class="tabs">
+    <label for="d-lv">Lunes a viernes</label>
+    <label for="d-sa">Sábado</label>
+    <label for="d-do">Domingo</label>
+  </div>
+
+  <ul class="sched" id="s-lv">
+    <li><span class="h">00:00 – 06:00</span><div><strong>Música sin parar</strong><span class="d">Selección continua para la madrugada</span></div></li>
+    <li><span class="h">06:00 – 10:00</span><div><strong>Despierta, Cuqui</strong><span class="d">Magazine matinal con noticias, tráfico y buen humor</span></div></li>
+    <li><span class="h">10:00 – 13:00</span><div><strong>La Mañana Cuqui</strong><span class="d">Entrevistas, secciones y concursos con los oyentes</span></div></li>
+    <li><span class="h">13:00 – 15:00</span><div><strong>Cuqui Informativos</strong><span class="d">Actualidad local y nacional, deportes y el tiempo</span></div></li>
+    <li><span class="h">15:00 – 18:00</span><div><strong>Sobremesa Cuqui</strong><span class="d">Los hits del momento y los clásicos de siempre</span></div></li>
+    <li><span class="h">18:00 – 21:00</span><div><strong>El Rincón del Oyente</strong><span class="d">Llamadas, dedicatorias y peticiones en directo</span></div></li>
+    <li><span class="h">21:00 – 23:00</span><div><strong>Cuqui Sessions</strong><span class="d">Música en directo desde el estudio</span></div></li>
+    <li><span class="h">23:00 – 00:00</span><div><strong>Noche Cuqui</strong><span class="d">Charla tranquila para cerrar el día</span></div></li>
+  </ul>
+
+  <ul class="sched" id="s-sa">
+    <li><span class="h">00:00 – 09:00</span><div><strong>Música sin parar</strong><span class="d">Selección continua</span></div></li>
+    <li><span class="h">09:00 – 14:00</span><div><strong>Sábado Cuqui</strong><span class="d">Magazine de fin de semana con invitados</span></div></li>
+    <li><span class="h">14:00 – 20:00</span><div><strong>Top Cuqui</strong><span class="d">Las canciones más pedidas de la semana</span></div></li>
+    <li><span class="h">20:00 – 00:00</span><div><strong>Cuqui Fiesta</strong><span class="d">Música para arrancar la noche</span></div></li>
+  </ul>
+
+  <ul class="sched" id="s-do">
+    <li><span class="h">00:00 – 09:00</span><div><strong>Música sin parar</strong><span class="d">Selección continua</span></div></li>
+    <li><span class="h">09:00 – 13:00</span><div><strong>Domingo de Cuqui</strong><span class="d">Humor, repaso de la semana y mensajes de oyentes</span></div></li>
+    <li><span class="h">13:00 – 19:00</span><div><strong>Cuqui Classics</strong><span class="d">Los grandes éxitos de todas las épocas</span></div></li>
+    <li><span class="h">19:00 – 00:00</span><div><strong>Cuqui Chill</strong><span class="d">Música relajada para despedir el fin de semana</span></div></li>
+  </ul>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span><b>Radio Cuqui FM</b> · Emitimos las 24 horas</span>
+    <span>© 2026 Radio Cuqui FM</span>
+  </div>
+</footer>
+</body>
+</html>

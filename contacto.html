@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radio Cuqui FM · Contacto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="index.html">Radio Cuqui FM</a>
+    <nav aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="parrilla.html">Parrilla</a>
+      <a href="invitados.html">Invitados</a>
+      <a href="contacto.html" aria-current="page">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="page-head">
+    <h1>Habla con nosotros</h1>
+    <p>Pide una canción, manda una dedicatoria o haz una pregunta a los invitados. Leemos vuestros mensajes en antena.</p>
+  </div>
+  <div class="contact">
+    <section class="panel">
+      <h2>Envía tu mensaje</h2>
+      <form action="mailto:contacto@radiocuqui.fm" method="post" enctype="text/plain">
+        <label for="nombre">Tu nombre</label>
+        <input id="nombre" name="nombre" autocomplete="given-name" minlength="2" maxlength="40" required>
+        <label for="correo">Tu correo</label>
+        <input id="correo" name="correo" type="email" autocomplete="email" required>
+        <label for="tipo">Motivo</label>
+        <select id="tipo" name="tipo">
+          <option>Dedicatoria</option>
+          <option>Petición de canción</option>
+          <option>Pregunta a un invitado</option>
+          <option>Opinión sobre el programa</option>
+          <option>Publicidad y otros</option>
+        </select>
+        <label for="texto">Mensaje</label>
+        <textarea id="texto" name="texto" minlength="5" maxlength="280" required></textarea>
+        <button class="btn" type="submit">Enviar mensaje</button>
+        <p class="note">Al enviar se abrirá tu aplicación de correo con el mensaje.</p>
+      </form>
+      <ul class="info">
+        <li>Correo: <a href="mailto:contacto@radiocuqui.fm">contacto@radiocuqui.fm</a></li>
+        <li>Teléfono del estudio: <a href="tel:+34900000000">900 000 000</a></li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>Muro de oyentes</h2>
+      <div class="wall">
+        <article class="msg"><div><b>Carmen</b><span>Dedicatoria · Hoy</span></div><p>Un abrazo enorme a mi madre, que escucha el Rincón del Oyente cada tarde.</p></article>
+        <article class="msg"><div><b>Javi</b><span>Petición de canción · Hoy</span></div><p>¿Podéis poner algo de los 90 en la sobremesa? Gracias por acompañarme en el trabajo.</p></article>
+        <article class="msg"><div><b>Rosa</b><span>Opinión sobre el programa · Ayer</span></div><p>La entrevista de ayer fue genial. ¡Más invitados así, por favor!</p></article>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span><b>Radio Cuqui FM</b> · Emitimos las 24 horas</span>
+    <span>© 2026 Radio Cuqui FM</span>
+  </div>
+</footer>
+</body>
+</html>
